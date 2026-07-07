@@ -1,11 +1,14 @@
 import { create } from "./actions";
+import "./register.css";
 
 export default function RegisterPage() {
   return (
-    <main className="signup-page">
-      <form action={create} className="signup-card">
+    <main className="register-page">
+      <form action={create} className="register-card">
         <h1>New Member</h1>
-        <p>Create a ReggaeTONED account for free</p>
+        <p className="register-subtitle">
+          Create a ReggaeTONED account for free
+        </p>
 
         <div className="form-row">
           <label>
@@ -20,17 +23,17 @@ export default function RegisterPage() {
         </div>
 
         <label>
-          Email
+          E-mail
           <input name="email" type="email" placeholder="me@example.com" required />
         </label>
 
         <label className="checkbox-row">
           <input type="checkbox" name="wantsUpdates" />
-          Send me the newest updates, deals, and special offers
+          <span>Send me new workouts, events, deals, and special offers</span>
         </label>
 
         <label>
-          Phone
+          Phone Number
           <input name="phone" placeholder="+1 (123) 555-1234" />
         </label>
 
@@ -39,7 +42,25 @@ export default function RegisterPage() {
           <input name="password" type="password" placeholder="••••••••" required />
         </label>
 
-        <button type="submit">Create Account</button>
+        <button className="create-btn" type="submit">
+          Create Account
+        </button>
+
+        <div className="divider">
+          <span></span>
+          <p>OR</p>
+          <span></span>
+        </div>
+
+        <button type="button" className="social-btn">
+          <span className="google-icon">G</span>
+          Continue with Google
+        </button>
+
+        <button type="button" className="social-btn">
+          <span className="facebook-icon">f</span>
+          Continue with Facebook
+        </button>
       </form>
     </main>
   );

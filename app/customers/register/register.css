@@ -1,0 +1,121 @@
+.register-page {
+  min-height: 100vh;
+  background: #f4f8fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.register-card {
+  width: 100%;
+  max-width: 390px;
+}
+
+.register-card h1 {
+  font-size: 34px;
+  color: #111827;
+  margin-bottom: 8px;
+  font-weight: 900;
+}
+
+.register-subtitle {
+  color: #718096;
+  margin-bottom: 38px;
+}
+
+.register-card label {
+  display: flex;
+  flex-direction: column;
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 600;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.register-card input {
+  height: 40px;
+  border: 1px solid #cbd5e1;
+  background: transparent;
+  border-radius: 8px;
+  padding: 0 12px;
+  font-size: 14px;
+  outline: none;
+}
+
+.checkbox-row {
+  flex-direction: row !important;
+  align-items: center;
+  gap: 8px !important;
+  font-size: 12px !important;
+}
+
+.checkbox-row input {
+  width: 14px;
+  height: 14px;
+  accent-color: #1f5138;
+}
+
+.create-btn {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 12px;
+  background: #194d34;
+  color: white;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 30px 0;
+  color: #718096;
+  font-size: 11px;
+}
+
+.divider span {
+  height: 1px;
+  background: #cbd5e1;
+  flex: 1;
+}
+
+.social-btn {
+  width: 100%;
+  height: 42px;
+  border: 1px solid #cbd5e1;
+  background: transparent;
+  border-radius: 999px;
+  margin-bottom: 14px;
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.google-icon {
+  color: #4285f4;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.facebook-icon {
+  color: #1877f2;
+  font-size: 20px;
+  font-weight: 900;
+}
